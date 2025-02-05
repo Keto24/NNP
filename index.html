@@ -1,1 +1,119 @@
-<h1>test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drowsiness Detection System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #007bff;
+            text-align: center;
+        }
+        .goal-list {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Drowsiness Detection System</h1>
+        <p class="text-center"><em>A real-time neural network-based safety system to prevent drowsy driving accidents.</em></p>
+
+        <hr>
+
+        <h2>Project Description</h2>
+        <p>
+            Driving while drowsy is a significant risk factor for accidents, especially for long-haul truck drivers. 
+            This project aims to develop a <strong>real-time drowsiness detection system</strong> that monitors a driver's face using 
+            <strong>computer vision and neural networks</strong> to identify signs of fatigue. 
+        </p>
+        <p>
+            By analyzing <strong>eye movement, blinking patterns, and head position</strong>, the system will classify whether a driver is alert or drowsy and trigger alerts accordingly.
+            The detection model will leverage <strong>OpenCV for facial detection</strong> and a <strong>Convolutional Neural Network (CNN)</strong> to detect drowsiness with high accuracy.
+            Alerts such as a <strong>sound buzzer</strong> or <strong>real-time SMS notifications</strong> will be activated when drowsiness is detected.
+        </p>
+
+        <hr>
+
+        <h2>Goals</h2>
+        <ul class="goal-list">
+            <li>Develop a real-time <strong>facial detection pipeline</strong> using OpenCV and Dlib.</li>
+            <li>Train a <strong>neural network model</strong> (CNN, ANN, or LSTM) for drowsiness classification.</li>
+            <li>Achieve an accuracy of <strong>85% or higher</strong> in drowsiness detection.</li>
+            <li>Integrate a <strong>real-time alert system</strong> (buzzer, SMS via Twilio, etc.).</li>
+            <li>Test the model with real-world driver behavior datasets.</li>
+        </ul>
+
+        <hr>
+
+        <h2>Technology Stack</h2>
+        <p>
+            The project will leverage the following technologies:
+        </p>
+        <ul class="goal-list">
+            <li><strong>Machine Learning:</strong> TensorFlow, Keras, PyTorch, scikit-learn</li>
+            <li><strong>Computer Vision:</strong> OpenCV, Dlib, Haar Cascades</li>
+            <li><strong>Real-Time Processing:</strong> Raspberry Pi Camera, Webcam</li>
+            <li><strong>Deployment:</strong> AWS Lambda, EC2, Google Cloud</li>
+            <li><strong>Notifications:</strong> Twilio (SMS), AWS SES (Email)</li>
+        </ul>
+
+        <hr>
+
+        <h2>Success Criteria</h2>
+        <p>
+            The project will be considered successful if:
+        </p>
+        <ul class="goal-list">
+            <li>The model achieves <strong>85%+ accuracy</strong> on a real-world dataset.</li>
+            <li>The system works in <strong>real-time</strong> with minimal false alarms.</li>
+            <li>The alert mechanisms <strong>successfully notify drivers</strong> when drowsiness is detected.</li>
+        </ul>
+
+        <hr>
+
+        <h2>Potential Challenges</h2>
+        <ul class="goal-list">
+            <li>Acquiring high-quality labeled datasets for drowsy and alert drivers.</li>
+            <li>Minimizing false positives to avoid unnecessary alerts.</li>
+            <li>Ensuring real-time performance on resource-limited devices.</li>
+        </ul>
+
+        <hr>
+
+        <h2>References</h2>
+        <p>Datasets and related works:</p>
+        <ul class="goal-list">
+            <li><a href="https://paperswithcode.com/dataset" target="_blank">Papers with Code - Datasets</a></li>
+            <li><a href="https://www.kaggle.com/datasets" target="_blank">Kaggle - Driver Drowsiness Dataset</a></li>
+            <li><a href="https://github.com/topics/drowsiness-detection" target="_blank">GitHub Projects on Drowsiness Detection</a></li>
+        </ul>
+
+        <div class="footer">
+            <p>&copy; 2025 | Drowsiness Detection System | Created for Neural Networks Course</p>
+        </div>
+    </div>
+
+</body>
+</html>
